@@ -6,29 +6,71 @@
   background-size: cover;
 }
 .home {
-  .intro {
-
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-      
-    }
-  
+  padding-top: 1%;
+  .container();
+  background-color: @sandstorm;
+  .imgtop {
+    .flex();
+    border: 2px solid black;
+    width: 60%;
+    border-radius: 22px;
+    height: 50%;
+    align-items:center;
+    justify-content: center;
+    margin-left: 20%;
   }
-  
-    img {
-      .flex();
-      align-content: space-around;
-      width: 50%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 50%;
-      align-items:center;
-      justify-content: center;
-    }
+  .top {
+    background-color: @sinopia;
+    border-radius: 32px;
+    // border: 2px solid black;
+    height: 260px;
+    .flex();
+    flex-direction: row;
+    margin-top: 1%;
+    align-items:center;
+    align-content: space-between;
+    width: 60%;   
+    margin-left: 20%;
+     .topimg {
+       border-radius: 10%;
+       width: 43%;
+     }
+     .toptext {
+       .flex();
+       flex-direction: column;
+       align-content: space-between;
+       justify-content: center;
+       align-items: center;
+      //  border: 2px solid blue;
+       width:100%;
+       height: 100%;
+     }
+  }
+  .mid {
+    // border: 2px solid black;
+    background-color: @wageningreen;
+    border-radius: 18px;
+    .flex();
+    margin-top: 1%;
+    justify-content: center;
+    width: 60%;   
+    margin-left: 20%;
+     .midimg {
+       border-radius: 10%;
+       width: 80%;
+     }
+     .midtext {
+       .flex();
+       flex-direction: column;
+       align-content: space-between;
+       justify-content: space-evenly;
+      //  border: 2px solid blue;
+       width: 100%;
+     }
+  }  
+
+
+
     @media @mobile {
       img {
         width: 100%;
@@ -79,12 +121,12 @@
         background-color:@chestnut;
         color: @magnolia;
         width: 35%;
-        height: 18%;
+        height: 20%;
         border-radius: 8px;
        
         a {
           text-decoration: none;
-          color: @magnolia
+          color: @magnolia;
           
          }
 

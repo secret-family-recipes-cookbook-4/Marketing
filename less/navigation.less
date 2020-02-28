@@ -7,7 +7,7 @@ nav {
     color: @richblack;
     border-bottom: 1px dashed @main-border-color;
     align-content: space-around;
-    
+    background-color:@Bostonured;
 
     .logo {
         padding-top: 2%;
@@ -15,11 +15,13 @@ nav {
         
     }
     .navi {
+        background-color:@Bostonured;
         .flex();
         flex-direction: row;
         justify-content: space-evenly;
         width: 25%;
         padding-bottom: 1%;
+        line-height: 10%;
         @media @mobile {
          width: 90%;   
         }
@@ -27,7 +29,7 @@ nav {
             text-decoration: none;
             font-size: 1.8rem;
             font-weight: bold;
-            color:@nav-font;  
+            color: @nav-font;  
         }
     }
     @media @mobile {
