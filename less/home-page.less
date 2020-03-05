@@ -7,35 +7,46 @@
   .imgtop {
     .flex();
     border: 2px solid black;
-    width: 60%;
+    width: 80%;
     border-radius: 22px;
     height: 50%;
     align-items:center;
     justify-content: center;
-    margin-left: 20%;
-    @media @mobile {
     margin: 0 auto;
+    @media @mobile {
+      margin: 0 auto;
+      width: 100%;
     }
   }
   .top {
     background-color: @sinopia;
     border-radius: 32px;
-    height: 260px;
+    
     .flex();
     flex-direction: row;
     margin-top: 1%;
     align-items:center;
-    align-content: space-between;  
-    width: 60%;
-    margin-left: 20%;
+    align-content: space-between;
+    width: 80%;
+    margin: 0 auto;
+    @media @tablet {
+      margin: 0 auto;
+      flex-direction: column;
+      height: 700px;
+    }
     @media @mobile {
       margin: 0 auto;
       flex-direction: column;
-      height: 500px;
+      height: 800px;
+      width:100%;
       }
      .topimg {
        border-radius: 10%;
-       width: 43%;
+       width: 100%;
+       @media @tablet {
+         width: 90%;
+         padding-top:5%;
+       }
        @media @mobile {
          width: 80%;
        }
@@ -44,48 +55,68 @@
        .flex();
        flex-direction: column;
        align-content: space-between;
-      justify-content: space-evenly;
+       justify-content: space-evenly;
        align-items: center;
        width:100%;
        height: 100%;
      }
   }
   .mid {
-    // border: 2px solid black;
+    
     background-color: @wageningreen;
     border-radius: 18px;
     .flex();
     margin-top: 1%;
     justify-content: center;
     align-items:center;
-    width: 60%;   
-    margin-left: 20%;
-    height:110%;
+    width: 80%;   
+    margin: 0 auto;
+    
     margin-bottom: 4%;
+    @media @tablet {
+    
+      flex-direction: column;
+      justify-content: space-evenly;
+      height:900px;
+      }
     @media @mobile {
       margin: 0 auto;
       flex-direction: column;
-      height:500px;
+      height:800px;
+      width:100%;
       }
 
      .midimg {
        border-radius: 10%;
        width: 80%;
+       @media @tablet {       
+        padding-bottom:5%;
+       }
+       
      }
      .midtext {
        .flex();
        flex-direction: column;
        align-content: space-between;
        justify-content: space-evenly;
+       align-items: center;
        width: 100%;
+       @media @tablet {
+        align-items: center;
+        height: 100%;
+       }
        @media @mobile {
         align-items: center;
        }
      }
   }  
+  @media @tablet {
+    img {
+      width: 100%;
+    
+  }
 
-
-
+    }
     @media @mobile {
       img {
         width: 100%;

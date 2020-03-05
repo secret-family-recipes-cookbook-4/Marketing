@@ -2,6 +2,7 @@
 footer {
   .flex();
   .container();
+  flex-direction: column;
   color: @footer-font-color;
   background: @footer-background;
   padding: 20px 0;
@@ -9,4 +10,17 @@ footer {
   border-radius: 10px;
   justify-content: center;
   align-items: center;
+  width:800px;
+  a {
+    text-decoration: none;
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: @nav-font;
+  }
+  @media @tablet {
+    width: 768px;
+  }
+  @media @mobile {
+    width:400px;
+  }
 }

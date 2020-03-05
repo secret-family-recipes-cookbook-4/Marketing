@@ -37,19 +37,22 @@
 
   .button {
     padding: 15px 25px;
+    text-align: center;
     cursor: pointer;
     outline: none;
     background-color: @Bostonured;
-    // border: none;
+    border: none;
     border-radius: 15px;
     box-shadow: 0 9px @sandstorm;
+    background-clip: padding-box;
+    box-shadow: 0 9px @Bostonured;
   }
   
   .button:hover {background-color: @chestnut}
   
   .button:active {
     background-color: @chestnut;
-    box-shadow: 0 5px #666;
+    box-shadow: 0 5px @sandstorm;
     transform: translateY(4px);
   }
 
