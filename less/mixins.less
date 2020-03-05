@@ -1,0 +1,66 @@
+// Mixins Here
+.flex {
+    display:flex;
+
+}
+.person {
+    background-color: @wageningreen;
+    border-radius: 18px;
+    .flex();
+    margin-top: 1%;
+    justify-content: center;
+    width: 50%;   
+    margin-left: 25%;
+    height:110%;
+    margin-bottom: 4%;
+    align-items:center;
+    @media @mobile {
+        margin: 0 auto;
+        flex-direction: column;
+        height:350px;
+        }
+     .midimg {
+       border-radius: 10%;
+       width: 80%;
+     }
+     .sometext {
+       .flex();
+       flex-direction: column;
+       align-content: space-between;
+       justify-content: center;
+       width: 80%;
+       @media @mobile {
+        align-items: center;
+       }
+     }
+  }  
+
+  .button {
+    padding: 15px 25px;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    background-color: @Bostonured;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px @sandstorm;
+    background-clip: padding-box;
+    box-shadow: 0 9px @Bostonured;
+  }
+  
+  .button:hover {background-color: @chestnut}
+  
+  .button:active {
+    background-color: @chestnut;
+    box-shadow: 0 5px @sandstorm;
+    transform: translateY(4px);
+  }
+
+
+.animation {
+    background-color: @chestnut;
+    animation-name: fire;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+
+}
